@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AgregarMascotaComponent } from './agregar-mascota/agregar-mascota.component';
-import { ListarMascotasComponent } from './listar-mascotas/listar-mascotas.component';
-import { EditarMascotaComponent } from './editar-mascota/editar-mascota.component';
+import { AgregaralertaComponent } from './agregar-alerta/agregar-alerta.component';
+import { ListaralertasComponent } from './listar-alertas/listar-alertas.component';
+import { EditaralertaComponent } from './editar-alerta/editar-alerta.component';
 import { AcercaDeComponent } from './acerca-de/acerca-de.component';
 
 const routes: Routes = [
   { path: "acerca-de", component: AcercaDeComponent },
-  { path: "mascotas", component: ListarMascotasComponent },
-  { path: "mascotas/agregar", component: AgregarMascotaComponent },
-  { path: "mascotas/editar/:id", component: EditarMascotaComponent },
-  { path: "", redirectTo: "/mascotas", pathMatch: "full" },
-  { path: "**", redirectTo: "/mascotas" }
+  { path: "alertas", component: ListaralertasComponent },
+  { path: "alertas/agregar", component: AgregaralertaComponent },
+  { path: "alertas/editar/:id", component: EditaralertaComponent },
+  { path: "", redirectTo: "/alertas", pathMatch: "full" },
+  { path: "**", redirectTo: "/alertas" }
 ];
 
 @NgModule({
