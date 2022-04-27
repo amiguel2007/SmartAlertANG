@@ -2,23 +2,23 @@
 <form (ngSubmit)="onSubmit()" #formalerta="ngForm">
     <p>
         <mat-form-field>
-            <input matInput name="nombre" [(ngModel)]="alerta.nombre"
+            <input matInput name="Fecha y hora" [(ngModel)]="alerta.nombre"
                 type="text"
-                placeholder="Nombre">
+                placeholder="Fecha y hora">
         </mat-form-field>
     </p>
     <p>
         <mat-form-field>
-            <input matInput name="raza" [(ngModel)]="alerta.raza"
+            <input matInput name="tipo" [(ngModel)]="alerta.raza"
                 type="text"
-                placeholder="Raza">
+                placeholder="tipo">
         </mat-form-field>
     </p>
     <p>
         <mat-form-field>
-            <input matInput name="edad" [(ngModel)]="alerta.edad"
+            <input matInput name="usuario" [(ngModel)]="alerta.edad"
                 type="number"
-                placeholder="Edad">
+                placeholder="usuario">
         </mat-form-field>
     </p>
     <p>

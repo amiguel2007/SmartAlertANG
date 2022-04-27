@@ -1,4 +1,4 @@
-CREATE TABLE `mascotas` (
+CREATE TABLE `alertas` (
   `id` bigint(20) UNSIGNED NOT NULL primary key AUTO_INCREMENT,
   `nombre` varchar(255) NOT NULL,
   `raza` varchar(255) NOT NULL,

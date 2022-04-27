@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseUrl: "http://localhost/alertas_angular",
+  baseUrl: "http://localhost/server",
 };
 
 /*

@@ -1,16 +1,16 @@
 /*
 
-    Programado por Luis Cabrera Benito 
-  ____          _____               _ _           _       
- |  _ \        |  __ \             (_) |         | |      
- | |_) |_   _  | |__) |_ _ _ __ _____| |__  _   _| |_ ___ 
+    Programado por Luis Cabrera Benito
+  ____          _____               _ _           _
+ |  _ \        |  __ \             (_) |         | |
+ | |_) |_   _  | |__) |_ _ _ __ _____| |__  _   _| |_ ___
  |  _ <| | | | |  ___/ _` | '__|_  / | '_ \| | | | __/ _ \
  | |_) | |_| | | |  | (_| | |   / /| | |_) | |_| | ||  __/
  |____/ \__, | |_|   \__,_|_|  /___|_|_.__/ \__, |\__\___|
-         __/ |                               __/ |        
-        |___/                               |___/         
-    
-    
+         __/ |                               __/ |
+        |___/                               |___/
+
+
     Blog:       https://parzibyte.me/blog
     Ayuda:      https://parzibyte.me/blog/contrataciones-ayuda/
     Contacto:   https://parzibyte.me/blog/contacto/
@@ -37,16 +37,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'crud-angular-php-mysql'`, () => {
+  it(`should have as title 'smartalert'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('crud-angular-php-mysql');
+    expect(app.title).toEqual('smartalert');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('crud-angular-php-mysql app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('smartalert app is running!');
   });
 });
