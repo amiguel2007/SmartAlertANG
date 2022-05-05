@@ -1,20 +1,3 @@
-/*
-
-    Programado por Luis Cabrera Benito
-  ____          _____               _ _           _
- |  _ \        |  __ \             (_) |         | |
- | |_) |_   _  | |__) |_ _ _ __ _____| |__  _   _| |_ ___
- |  _ <| | | | |  ___/ _` | '__|_  / | '_ \| | | | __/ _ \
- | |_) | |_| | | |  | (_| | |   / /| | |_) | |_| | ||  __/
- |____/ \__, | |_|   \__,_|_|  /___|_|_.__/ \__, |\__\___|
-         __/ |                               __/ |
-        |___/                               |___/
-
-
-    Blog:       https://parzibyte.me/blog
-    Ayuda:      https://parzibyte.me/blog/contrataciones-ayuda/
-    Contacto:   https://parzibyte.me/blog/contacto/
-*/
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -39,11 +22,20 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { EditaralertaComponent } from './editar-alerta/editar-alerta.component';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { AcercaDeComponent } from './acerca-de/acerca-de.component';
+
+//componentes login
+
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     AgregaralertaComponent,
     ListaralertasComponent,
+    LoginComponent,
+    RegisterComponent,
     DialogoConfirmacionComponent,
     EditaralertaComponent,
     AcercaDeComponent

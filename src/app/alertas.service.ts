@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { alerta } from "./alerta"
 import { environment } from "../environments/environment"
+import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
@@ -10,23 +11,23 @@ export class alertasService {
 
   constructor(private http: HttpClient) { }
 
-  getalertas() {
+  getalertas():Observable<any> {
     return this.http.get(`${this.baseUrl}/getAll.php`);
   }
 
-  getalerta(id: string | number) {
+  getalerta(id: string | number):Observable<any> {
     return this.http.get(`${this.baseUrl}/get.php?idalerta=${id}`);
   }
 
-  addalerta(alerta: alerta) {
+  addalerta(alerta: alerta):Observable<any> {
     return this.http.post(`${this.baseUrl}/post.php`, alerta);
   }
 
-  deletealerta(alerta: alerta) {
+  deletealerta(alerta: alerta):Observable<any> {
     return this.http.delete(`${this.baseUrl}/delete.php?idalerta=${alerta.id}`);
   }
 
-  updatealerta(alerta: alerta) {
+  updatealerta(alerta: alerta):Observable<any> {
     return this.http.put(`${this.baseUrl}/update.php`, alerta);
   }
 }

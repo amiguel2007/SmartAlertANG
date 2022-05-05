@@ -4,6 +4,7 @@ import { alerta } from "../alerta"
 import { MatDialog } from '@angular/material/dialog';
 import { DialogoConfirmacionComponent } from "../dialogo-confirmacion/dialogo-confirmacion.component"
 import { MatSnackBar } from '@angular/material/snack-bar';
+
 @Component({
   selector: 'app-listar-alertas',
   templateUrl: './listar-alertas.component.html',
@@ -11,7 +12,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 })
 export class ListaralertasComponent implements OnInit {
   public alertas: alerta[] = [
-    new alerta("Maggie", "Chihuahua", 20)
+    new alerta("Maggie", "Chihuahua", "ubicacion", 20)
   ];
 
   constructor(private alertasService: alertasService, private dialogo: MatDialog, private snackBar: MatSnackBar) { }
