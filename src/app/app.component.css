@@ -6,6 +6,7 @@
 
 .barra {
     flex: 0 1 auto;
+    background: orange;
 }
 
 .contenido {

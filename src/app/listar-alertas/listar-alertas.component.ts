@@ -37,13 +37,16 @@ export class ListaralertasComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.obteneralertas();
+    setInterval(() => {
+      this.obteneralertas()
+     }, 1500);
   }
 
   obteneralertas() {
     return this.alertasService
       .getalertas()
-      .subscribe((alertas: alerta[]) => this.alertas = alertas);
+      .subscribe(
+        (alertas: alerta[]) => this.alertas = alertas);
   }
 
 }
