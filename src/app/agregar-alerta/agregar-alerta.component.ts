@@ -19,7 +19,7 @@ export class AgregaralertaComponent implements OnInit {
 
   ngOnInit() {
   }
-  alertaModel = new alerta("", "", "", undefined)
+  alertaModel = new alerta("", "", "", "", undefined)
 
   onSubmit() {
     this.alertasService.addalerta(this.alertaModel).subscribe(() => {

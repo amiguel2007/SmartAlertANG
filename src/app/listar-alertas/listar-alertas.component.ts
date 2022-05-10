@@ -12,7 +12,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 })
 export class ListaralertasComponent implements OnInit {
   public alertas: alerta[] = [
-    new alerta("Maggie", "Chihuahua", "ubicacion", 20)
+    new alerta("Cargando...", "Cargando...", "Cargando...", "Cargando...", 20)
   ];
 
   constructor(private alertasService: alertasService, private dialogo: MatDialog, private snackBar: MatSnackBar) { }

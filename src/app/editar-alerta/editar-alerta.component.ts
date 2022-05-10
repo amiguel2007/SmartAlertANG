@@ -10,7 +10,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 })
 export class EditaralertaComponent implements OnInit {
 
-  public alerta: alerta = new alerta("", "", "", 0);
+  public alerta: alerta = new alerta("", "", "", "", 0);
 
   constructor(private route: ActivatedRoute,
     private router: Router, private alertasService: alertasService,
