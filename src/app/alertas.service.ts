@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { alerta } from "./alerta"
+import { form } from "./form"
 import { environment } from "../environments/environment"
 import { Observable } from 'rxjs';
 @Injectable({
@@ -25,6 +26,11 @@ export class alertasService {
 
   deletealerta(alerta: alerta):Observable<any> {
     return this.http.delete(`${this.baseUrl}/delete.php?idalerta=${alerta.id}`);
+  }
+
+  enviarform(form: form):Observable<any> {
+    return this.http.delete(`http://localhost/mail/PHPMailer-master/mail.php?idalerta=${form.email}`);
+    console.log("enviado");
   }
 
   updatealerta(alerta: alerta):Observable<any> {

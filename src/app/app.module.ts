@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AgregaralertaComponent } from './agregar-alerta/agregar-alerta.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -25,20 +24,26 @@ import { AcercaDeComponent } from './acerca-de/acerca-de.component';
 
 //componentes login
 
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
+// import { LoginComponent } from './login/login.component';
+// import { RegisterComponent } from './register/register.component';
+
+//componente home
+import { HomeComponent } from './home/home.component';
+import { ContactoComponent } from './contacto/contacto.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    AgregaralertaComponent,
     ListaralertasComponent,
-    LoginComponent,
-    RegisterComponent,
+    // LoginComponent,
+    // RegisterComponent,
     DialogoConfirmacionComponent,
     EditaralertaComponent,
-    AcercaDeComponent
+    AcercaDeComponent,
+    HomeComponent,
+    ContactoComponent
   ],
   entryComponents: [
     DialogoConfirmacionComponent,

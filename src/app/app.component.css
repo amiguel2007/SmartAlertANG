@@ -6,11 +6,13 @@
 
 .barra {
     flex: 0 1 auto;
-    background: orange;
+    background: rgb(112, 191, 255);
 }
 
 .contenido {
     flex: 1 1 auto;
+    background-color: rgb(215, 246, 255);
+
 }
 
 .padding-10 {

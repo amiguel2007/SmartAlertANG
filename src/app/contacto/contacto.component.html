@@ -1,0 +1,45 @@
+<div class="center">
+
+	<div class="card">
+		<div class="additional">
+			<div class="user-card">
+        <div class="logo-container">
+          <div class="logo">
+              <img src="https://www.iesvirgendelcarmen.com/edu/pluginfile.php/1/theme_moove/logo/1620067796/escudo.png">
+          </div>
+        </div>
+
+			</div>
+			<div class="more-info">
+        <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm.value)">
+          <div class="form-group">
+            <input type="text" placeholder="Cuál es su nombre?"  clas="form-control" name="name" [(ngModel)]="name" required/>
+          </div>
+          <div class="form-group">
+            <input name="emailaddress" placeholder="Cuál es su email?*" class="form-control" type="email" name="email" [(ngModel)]="email" required/>
+          </div>
+          <div class="form-group">
+            <textarea rows="4" cols="40" placeholder="Introduzca el mensaje*" class="form-control" name="message" [(ngModel)]="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" [disabled]="!contactForm.valid">Enviar</button>
+        </form>
+			</div>
+		</div>
+		<div class="general more-info">
+      <h1>Formulario de Contacto</h1>
+      <div class="coords">
+       <span class="strong">Nombre: </span>
+       <span>{{contactForm.value.name}}</span>
+      </div>
+      <div class="coords">
+       <span class="strong">Email: </span>
+       <span>{{contactForm.value.email}}</span>
+      </div>
+      <div class="coords">
+       <span class="strong">Mensaje: </span>
+       <span>{{contactForm.value.message}}</span>
+      </div>
+      <span class="more">Pasa el ratón por encima para ver la información</span>
+		</div>
+	</div>
+</div>
