@@ -18,7 +18,6 @@ import { MatTableModule } from '@angular/material/table';
 import { HttpClientModule } from '@angular/common/http';
 import { DialogoConfirmacionComponent } from './dialogo-confirmacion/dialogo-confirmacion.component';
 import { MatDialogModule } from '@angular/material/dialog';
-import { EditaralertaComponent } from './editar-alerta/editar-alerta.component';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { AcercaDeComponent } from './acerca-de/acerca-de.component';
 
@@ -40,7 +39,6 @@ import { ContactoComponent } from './contacto/contacto.component';
     // LoginComponent,
     // RegisterComponent,
     DialogoConfirmacionComponent,
-    EditaralertaComponent,
     AcercaDeComponent,
     HomeComponent,
     ContactoComponent

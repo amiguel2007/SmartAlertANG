@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ListaralertasComponent } from './listar-alertas/listar-alertas.component';
-import { EditaralertaComponent } from './editar-alerta/editar-alerta.component';
 import { AcercaDeComponent } from './acerca-de/acerca-de.component';
 // import { LoginComponent } from './login/login.component';
 // import { RegisterComponent } from './register/register.component';
@@ -14,7 +13,6 @@ const routes: Routes = [
   { path: "alertas", component: ListaralertasComponent },
   { path: "contacto", component: ContactoComponent },
   { path: "home", component: HomeComponent },
-  { path: "alertas/editar/:id", component: EditaralertaComponent },
   //{ path: "", redirectTo: "/alertas", pathMatch: "full" },
   { path: "**", redirectTo: "/home" },
 

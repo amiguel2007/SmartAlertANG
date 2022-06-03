@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { form } from "../form";
+import { Form } from "../form";
 import { alertasService } from "../alertas.service";
 import { MatSnackBar } from '@angular/material/snack-bar';
 
@@ -11,15 +11,15 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   styleUrls: ['./contacto.component.css']
 })
 export class ContactoComponent implements OnInit {
-  public form: form[] = [
-    new form("", "", "")
+  public form: Form[] = [
+    new Form("", "", "")
   ];
 
   constructor(private alertasService: alertasService, private snackBar: MatSnackBar) { }
 
   ngOnInit() {
   }
-  onSubmit(value: any){
+/*   onSubmit(value: any){
     this.alertasService
     .enviarform(value)
     .subscribe(() => {
@@ -30,4 +30,17 @@ export class ContactoComponent implements OnInit {
     console.log('Save: ', value.name);
 })
 }
+ */
+formModel = new Form("", "", "")
+
+onSubmit(value: any) {
+  this.alertasService.enviarform(this.formModel).subscribe(() => {
+    this.snackBar.open('Formulario enviado', undefined, {
+      duration: 1500,
+    });
+  })
+}
+
+
+
 }

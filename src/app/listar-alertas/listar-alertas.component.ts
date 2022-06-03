@@ -20,7 +20,7 @@ export class ListaralertasComponent implements OnInit {
   eliminaralerta(alerta: alerta) {
     this.dialogo
       .open(DialogoConfirmacionComponent, {
-        data: `¿Realmente quieres eliminar a ${alerta.nombre}?`
+        data: `¿Realmente quieres eliminar la alerta?`
       })
       .afterClosed()
       .subscribe((confirmado: Boolean) => {
