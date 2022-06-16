@@ -19,28 +19,11 @@ export class ContactoComponent implements OnInit {
 
   ngOnInit() {
   }
-/*   onSubmit(value: any){
-    this.alertasService
-    .enviarform(value)
-    .subscribe(() => {
-      this.snackBar.open('alerta eliminada', undefined, {
-        duration: 1500,
-      });
-
-    console.log('Save: ', value.name);
-})
-}
- */
 formModel = new Form("", "", "")
 
 onSubmit(value: any) {
   this.alertasService.enviarform(this.formModel).subscribe(() => {
-    this.snackBar.open('Formulario enviado', undefined, {
-      duration: 1500,
-    });
+
   })
 }
-
-
-
 }
