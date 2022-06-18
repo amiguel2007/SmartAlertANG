@@ -29,7 +29,7 @@ export class alertasService {
   }
 
   enviarform(form: Form) {
-    return this.http.delete(`http://localhost/mail/PHPMailer-master/mail.php?idalerta=${form.email}`);
+    return this.http.delete(`https://antoniomiguelfernandez.es/forms/mail.php?name=${form.name}&email=${form.email}&message=${form.message}`);
   }
 
   updatealerta(alerta: alerta) {
